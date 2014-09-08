@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<description>Servlet to submit blogs</description>
+		<display-name>mBlog-SubmitBlog</display-name>
+		<servlet-name>SubmitBlog</servlet-name>
+		<servlet-class>mblog.server.SubmitBlog</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+			Servlet to get the list of Blogs from server
+		</description>
+		<display-name>mBlog- BlogList</display-name>
+		<servlet-name>BlogList</servlet-name>
+		<servlet-class>mblog.server.BlogList</servlet-class>
+	</servlet>
+	<servlet>
+		<description>Create New User</description>
+		<display-name>CreateUser</display-name>
+		<servlet-name>CreateUser</servlet-name>
+		<servlet-class>mblog.server.CreateUser</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>Blogs Web</display-name>
+		<servlet-name>Blogs</servlet-name>
+		<servlet-class>mblog.server.Blogs</servlet-class>
+	</servlet>
+  <servlet>
+    <description>Web interface for Viewing Blog</description>
+    <display-name>Show Blog over Web </display-name>
+    <servlet-name>ShowBlog</servlet-name>
+    <servlet-class>mblog.server.ShowBlog</servlet-class>
+  </servlet>
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>SubmitBlog</servlet-name>
+		<url-pattern>/SubmitBlog</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BlogList</servlet-name>
+		<url-pattern>/BlogList</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CreateUser</servlet-name>
+		<url-pattern>/CreateUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Blogs</servlet-name>
+		<url-pattern>/Blogs</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowBlog</servlet-name>
+    <url-pattern>/ShowBlog</url-pattern>
+  </servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

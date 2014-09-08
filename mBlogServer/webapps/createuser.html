@@ -1,0 +1,71 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Create New User</title>
+</head>
+
+<body bgcolor="#D6EAEF">
+		<form action="CreateUser" method="post"
+			enctype="application/x-www-form-urlencoded" name="create_user_form">
+			<div align="center">
+		
+			<h3>Create New User</h3>
+			<table width="24%" border="0" cellspacing="5" cellpadding="2">
+			
+				<tr>
+					<td width="49%">Username</td>
+					<td width="51%"><label> <input type="text"
+						name="username_field" id="username_field" /> </label></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><label> <input name="password_field" type="password"
+						id="password_field" maxlength="25" /> </label></td>
+				</tr>
+				<tr>
+					<td>Re-Type Password</td>
+					<td><label> <input name="re_password_field"
+						type="password" id="re_password_field" maxlength="25" /> </label></td>
+				</tr>
+				<tr>
+					<td>First Name</td>
+					<td><label> <input name="firstname_field" type="text"
+						id="firstname_field" maxlength="15" /> </label></td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><label> <input name="lastname_field" type="text"
+						id="lastname_field" maxlength="15" /> </label></td>
+				</tr>
+				<tr>
+					<td>Year</td>
+					<td><label> <select name="year_field"
+						id="year_field">
+						<option selected="selected">1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select></label> </td>
+				</tr>
+				<tr>
+					<td>User Type</td>
+					<td><label> <select name="user_type_list"
+						id="user_type_list">
+						<option selected="selected">Student</option>
+						<option>Lecturer</option>
+						<option>Professor</option>
+					</select> </label></td>
+				</tr>
+			</table>
+		
+				<p>
+				<input name="reset_button" type="reset" value="Reset" />&nbsp;&nbsp;
+				<input name="submit_button" type="submit" value="Create User" /></p>
+		
+			</div>
+		</form>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="mBlogServer"
+  id="myeclipse.1263929549296"
+  context-root="/mBlogServer"
+  j2ee-spec="5.0"
+  archive="mBlogServer.war">
+  <attributes>
+    <attribute name="webrootdir" value="webapps" />
+  </attributes>
+</project-module>
+

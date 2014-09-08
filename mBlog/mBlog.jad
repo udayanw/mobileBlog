@@ -1,0 +1,8 @@
+MIDlet-Version: 2.0.0
+MIDlet-Vendor: Midlet Suite Vendor
+MIDlet-Jar-URL: mBlog.jar
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-1: mBlog,mBlogIcon.png,mBlogPack.MBlog
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Permissions: javax.microedition.io.Connector.http
+MIDlet-Name: mBlog
